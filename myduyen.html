@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Giới thiệu về lập trình Scratch </title>
+  <link rel="icon" type="image/x-icon" href="/New folder/favicon.ico">
+  <link rel="stylesheet" href="./myduyen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="myFunction()">
+  <h1>
+    <ul>
+      <li class="dropdown"> <a href="javascript:void(0)" onclick="HM()" style="background-color: pink;"> Giới thiệu </a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Nhóm lệnh</a>
+        <div class="dropdown-content">
+          <a href="javascript:void(0)" onclick="CD()">Chuyển động</a>
+          <a href="javascript:void(0)" onclick="HT()">Hiển thị</a>
+          <a href="javascript:void(0)" onclick="SK()">Sự kiện</a>
+          <a href="javascript:void(0)" onclick="DK()">Điều khiển</a>
+        </div>
+      </li>
+      <li class="dropdown"> <a href="javascript:void(0)" onclick="CT()">Liên hệ</a></li>
+    </ul>
+  </h1>
+  <div id="total"></div>
+  <div id="home" style="display:none;">
+    <h2 class="head">GIỚI THIỆU VỀ LẬP TRÌNH SCRATCH</h2>
+    <center>
+      <img src='https://api.vietstem.com/api/Containers/imgs/download/1e627ebf-66cf-4bfc-8ad1-d90aa9c85a53.jpg' width="700" height="300">
+    </center>
+    <p class="Para">
+      Trong thời đại công nghê số hiện nay, lập trình Scratch đang trở thành một xu hướng đáng chú ý trong cộng đồng trẻ em trên toàn cầu.
+      Với sự kết hợp giữa trò chơi và học tập, Scratch mang đến một phương pháp giáo dục thú vị cho việc học lập trình. 
+      Nó không chỉ đơn thuần là một trò chơi giáo dục, mà còn là một công cụ hiệu quả để trẻ em tiếp cận với lĩnh vực lập trình. 
+      Học lập trình Scratch rất dễ dàng, chỉ cần làm theo một số bước đơn giản. 
+      Nếu bạn quan tâm tự học lập trình Scratch tại nhà, bài viết này chắc chắn sẽ giúp bạn!
+    </p>
+    <center>
+      <table>
+        <tr>
+          <td> 
+            <dl>
+              <dt><b>MỤC LỤC</b></dt>
+              <dt><a href="#C1">1. Scratch là gì? </a></dt>
+              <dt><a href="#C2">2. Tại sao nên học Scratch </a></dt>
+              <dt><a href="#C3">3. Giao diện làm việc của Scratch </a></dt>
+              <dd><a href="#C31">3.1. Khu vực Điều khiển </a></dd>
+              <dd><a href="#C32">3.2. Khu vực Kịch bản </a></dd>
+              <dd><a href="#C33">3.3. Khu vực Sân khấu </a></dd>
+              <dd><a href="#C34">3.4. Khu vực Nhân vật </a></dd>
+              <dd><a href="#C35">3.5. Khu vực Phong nền </a></dd>
+              <dt><a href="#C4">4. Các cách sử dụng Scratch để lập trình</a></dt>
+              <dt><a href="#C5">5. Tổng kết</a></dt>
+            </dl>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <h2 class="title" id="C1">1. SCRATCH LÀ GÌ?</h2>
+    <p class="Para">
+      Scratch là một ngôn ngữ lập trình trực quan và môi trường lập trình dành cho trẻ em và người mới học. 
+      Được phát triển tại MIT Media Lab vào năm 2003, Scratch đã trở thành một công cụ phổ biến để giúp mọi người khám phá thế giới của lập trình một cách dễ dàng và thú vị.
+    </p>
+    <center>
+      <div>
+        <img src='https://funix.edu.vn/wp-content/uploads/2022/08/hoc-lap-trinh-scratch-1.jpg' width="400" height="400">
+        <p style="font-weight:bold;font-size:20px;word-spacing:1.5px;">Biểu tượng Scratch </p>
+      </div>
+    </center>
+    <p class="Para">
+      Ban đầu, Scratch được tạo ra với mục tiêu hướng tới trẻ em từ 8 đến 16 tuổi, nhằm khuyến khích họ phát triển kỹ năng tư duy logic và sáng tạo thông qua việc tạo ra các trò chơi, câu chuyện tương tác và hoạt động giáo dục. 
+      Tuy nhiên, Scratch đã thu hút được một đối tượng rộng hơn, từ trẻ em nhỏ đến người lớn, từ giáo viên đến những người quan tâm đến công nghệ và lập trình. <br>
+      Ngoài ra, Scratch còn có một cộng đồng đông đảo và phát triển mạnh. Người dùng có thể chia sẻ dự án của mình trên trang web Scratch, tương tác với nhau, và học từ những dự án khác. 
+      Điều này tạo ra một môi trường học tập và chia sẻ đầy cảm hứng, khuyến khích sự sáng tạo và hợp tác. 
+    </p>
+    <h3 class="title" id="C2">2. TẠO SAO NÊN HỌC SCRATCH</h3>
+    <p class="Para">
+      Trong thời đại 4.0, khuyến khích trẻ học lập trình từ sớm là cấp thiết và mang lại nhiều lợi ích. 
+      Việc này giúp trẻ phát triển tư duy logic, sáng tạo và chuẩn bị cho tương lai công nghệ. <br>
+      Hơn nữa, học lập trình giúp trẻ xây dựng kỹ năng tư duy logic, giải quyết vấn đề, giao tiếp và hợp tác. 
+      Nó cũng mở ra cơ hội nghề nghiệp trong lĩnh vực công nghệ thông tin và khuyến khích sự sáng tạo và đổi mới.
+    </p>
+    <center>
+      <img src="https://bizweb.dktcdn.net/100/372/004/files/20-1.png?v=1603188713182" width="400" height="400">
+    </center>
+    <p class="Para">
+      Scratch có giao diện lập trình trực quan và lập trình bằng việc kéo thả hợp lí các khối lệnh một cách logic. 
+      Ứng dụng cung cấp sẵn một loạt các khối lệnh và tài nguyên như hình ảnh về các nhân vật, âm thanh và phông nền.
+      Vì vậy, ai cũng có thể xây dựng nên các chương trình cho riêng mình từ đơn giản tới phức tạp, cực kì phù hợp cho các em nhỏ từ cấp 1 đến cấp 2 và người mới học lập trình. <br>
+      Với Scratch, việc học lập trình trở nên thú vị và tiếp cận được cho mọi người mà không cần kiến thức lập trình trước. 
+      Scratch không chỉ là một công cụ học lập trình, mà còn là một cộng đồng năng động và sáng tạo.
+    </p>
+    <h3 class="title" id="C3">3. GIAO DIỆN LÀM VIỆC CỦA SCRATCH </h3>
+    <p class="Para">
+      Để bắt đầu học Scratch, ta cần làm quen với giao diện làm việc của Scratch. 
+      Trong bài viết này tôi sẽ giới thiệu 5 khu vực làm việc của Scratch bao gồm:
+      <ol>
+        <li class="Para">Khu vực Điều khiển</li>
+        <li class="Para">Khu vực Kịch bản</li>
+        <li class="Para">Khu vực Sân khấu</li>
+        <li class="Para">Khu vực Nhân vật</li>
+        <li class="Para">Khu vực Phông nền</li>
+      </ol>
+    </p>
+    <center>
+      <div>
+        <img src='http://prokids.csc.edu.vn/data/images/tin-tuc/huong-dan-tu-hoc-lap-trinh-scratch/huong-dan-tu-hoc-lap-trinh-scratch1.png' width="600" height="400">
+        <p style="font-weight:bold;font-size:20px;word-spacing:1.5px;">Các khu vực làm việc của Scratch </p>
+      </div>
+    </center>
+    <h4 class="title" id="C31">3.1. Khu vực điều khiển</h4>
+    <p class="Para">
+      Khu vực Điều khiển của phần mềm Scratch có 3 Tab thông tin là: Lệnh (Code), Thiết kế (Costumes) và âm thanh (Sounds):
+      <ol>
+        <li class="Para">Lệnh (Code): Đó là nơi chứa danh mục các thẻ lệnh thuộc 6 nhóm lệnh trong Scratch bao gồm: Chuyển động, Hiển thị, Âm Thanh, 
+          Sự kiện, Điều khiển, Cảm biến, Các phép toán, Biến và Khối của tôi để lập trình nên các đối tượng trong Scratch. Bạn có thể đọc các thông tin liên quan đến những nhóm 
+          lệnh trong Scratch trong mục <span style="color:blue;font-weight:bold;">List</span> của bài viết.</li>
+        <li class="Para">Thiết kế (Costumes): Là nơi chứa các giao diện hiển thị khác nhau (trang phục) của đối tượng.</li>
+        <li class="Para">Âm thanh (Sounds): Nơi có chứa âm thanh khác nhau của đối tượng.</li>
+      </ol>
+    </p>
+    <h4 class="title" id="C32">3.2. Khu vực Kịch bản</h4>
+    <p class="Para">
+      Khu vực kịch bản là nơi chứa các kịch bản bao gồm những thẻ lệnh được kéo ra từ tad Code của khu vực Điều khiển.
+      Các thẻ lệnh này được xếp chồng lên nhau theo thứ từ trên xuống dưới một cách logic để điều khiển hoạt động của nhân vật. 
+    </p>
+    <h4 class="title" id="C33">3.3. Khu vực Sân khấu</h4>
+    <p class="Para">
+      Đây là nơi là nơi hiển thị ra các hành động của những nhân vật, các bối cảnh của phông nền, các âm thanh và hiệu ứng đồ họa từ những đoạn kịch bản được chúng ta lập trình ra.
+      Thông qua đây, người dùng có thể nhìn nhận và tương tác với sản phẩm do chính chúng ta tạo ra.
+    </p>
+    <h4 class="title" id="C34">3.4. Khu vực Nhân vật</h4>
+    <p class="Para">
+      Là khu vực quản lý và hiển thị các thông số của các nhân vật như tên, tọa độ, kích cỡ,... 
+      Tại khu vực này, người dùng có thể thực hiện các thao tác như tạo thêm nhân vật, chỉnh sửa ngoại hình và trang phục cho nhân vật.
+      Khi lập trình Scratch 3.0 chạy lần đầu tiên, nhân vật chính của bạn chính là chú mèo Scratch.
+    </p>
+    <h4 class="title" id="C5">3.5. Khu vực Phông nền</h4>
+    <p class="Para">
+      Phông nền là khu vực quản lý, chỉnh sửa, thêm mới các ảnh nền hiển thị trên sân khấu ở giao diện chính của phần mềm.
+      <strong>Lưu ý:</strong> Bạn có thể lập trình cho phông nền để trách việc xảy ra các lỗi như hiển thị hay chuyển cảnh phông nền.
+    </p>
+    <h5 class="title" id="C4">4. CÁC CÁCH SỬ DỤNG SCRATCH ĐỂ LẬP TRÌNH </h5>
+    <p class="Para"> 
+      Chỉ cần với một chiếc máy tính có kết nối Internet, bạn có thể sử dụng Scratch để lập trình theo các cách sau:
+      <ol>
+        <li class="Para"> 
+          Truy cập trực tuyến vào trang wed <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> sử dụng trình chỉnh sửa trực tuyến. 
+          Nếu bạn tạo tài khoản riêng thay vì dùng trình chỉnh sửa trực tuyến ẩn danh, bạn có thể lưu các dự án của mình trực tuyến và chia sẻ chúng với cộng đồng Scratch.
+        </li>
+        <li class="Para"> 
+          Truy cập vào đường <a href="https://scratch.mit.edu/download" target="_blank">Link</a> để tải xuống Scratch Offline Editor và làm việc trên ứng dụng này.
+        </li>
+      </ol>
+    </p>
+    <h5 class="title" id="C5">5. TỔNG KẾT </h5>
+    <p class="Para">
+      Với Scratch, việc học lập trình trở nên thú vị và dễ dàng hơn bao giờ hết. 
+      Scratch là một môi trường lập trình trực quan và tương tác, dành cho cả trẻ em và người mới bắt đầu.
+      Với giao diện trực quan và khối lệnh kéo và thả, bạn có thể xây dựng các dự án sáng tạo như trò chơi, hoạt động tương tác và câu chuyện sống động. <br>
+      Scratch cho phép bạn tạo ra các chương trình bằng cách kết hợp các khối lệnh với nhau, mà không cần phải viết mã từ đầu. 
+      Bạn có thể điều khiển các sprite, tạo ra hiệu ứng, xử lý sự kiện và tương tác với người dùng. 
+      Scratch cung cấp các khối lệnh cho các lĩnh vực như chuyển động, âm thanh, hiển thị, điều khiển và nhiều hơn nữa, giúp bạn tạo ra các dự án độc đáo và sáng tạo. <br>
+      Với Scratch, bạn không chỉ học cách lập trình mà còn phát triển các kỹ năng tư duy logic, sáng tạo và hợp tác. 
+      Bạn có thể chia sẻ dự án của mình với cộng đồng Scratch, khám phá và học từ các dự án khác, và thậm chí có thể tham gia vào các cuộc thi và hoạt động lập trình quốc tế. <br>
+      Dù bạn là một học sinh, giáo viên hay đơn giản là một người đam mê sáng tạo, Scratch đều là một công cụ mạnh mẽ để khám phá và thể hiện ý tưởng của bạn. 
+      Hãy bắt đầu học Scratch ngay hôm nay và khám phá thế giới lập trình một cách vui nhộn và đầy sáng tạo!
+    </p>
+  </div>
+  <div id="CD" style="display:none;">
+    <h6 class="title"> NHÓM LỆNH CHUYỂN ĐỘNG </h6>
+    <center>
+      <img src="https://st.ebomb.edu.vn/src/erp-image/2022/12/20/ee62cf0e-62c4-4ced-8fc5-7dd0a731a62b.png" style="width:345px;height:345px">
+      <div><p style="font-weight:bold;font-size:20px;word-spacing:1.5px;">Hình ảnh các thẻ lệnh trong nhóm lệnh Chuyển động</p></div>
+    </center>
+    <p class="Para">
+      Trong Scratch, các khối lệnh chuyển động là những khối lệnh màu xanh lam đậm, được sử dụng để điều khiển và di chuyển các nhân vật (sprite). 
+      Điều đáng chú ý là các khối lệnh chuyển động chỉ có thể áp dụng cho các sprite, không thể áp dụng cho sân khấu. 
+      Các thẻ lệnh trong khối lệnh chuyển động có thể làm các chức năng phổ biến, ví dụ như:
+      <ul>
+        <li class="Para"> Di chuyển nhân vật. </li>
+        <li class="Para"> Đặt độ xoay, hướng xoay cho nhân vật. </li>
+        <li class="Para"> Làm cho các nhân vật di chuyển đến một điểm nhất định trên sân khâu hay tới một nhân vật khác. </li>
+        <li class="Para"> Thay đổi tọa độ x và y của nhân vật trên sân khấu. </li>
+        <li class="Para"> Khi nhân vật chạm vào khung sân khấu thì bật lại. </li>
+      </ul>
+    </p>
+  </div>
+  <div id="HT" style="display:none;">
+    <h6 class="title"> NHÓM LỆNH HIỂN THỊ </h6>
+    <center>
+      <img src="https://th.bing.com/th/id/OIP.KbWKtgvcmR-3u2YBu-a2YwHaF-?rs=1&pid=ImgDetMain" style="width:400px;height:400px">
+      <div><div><p style="font-weight:bold;font-size:20px;word-spacing:1.5px;">Hình ảnh các thẻ lệnh trong nhóm lệnh Hiển thị</p></div></div>
+    </center>
+    <p class="Para"> 
+      Nhóm lệnh hiển thị trong Scratch bao gồm các khối lệnh giúp điều chỉnh cách hiển thị của sprite. 
+      Các khối lệnh này cho phép bạn thay đổi kích thước, xoay, đổi màu và làm mờ sprite. <br> 
+      Với nhóm lệnh hiển thị, bạn có thể sử dụng khối lệnh "Thay đổi kích thước" để điều chỉnh kích thước của sprite theo tỷ lệ phần trăm hoặc giá trị cụ thể. 
+      Bạn cũng có thể sử dụng khối lệnh "Xoay" để xoay sprite theo góc độ mong muốn. <br> 
+      Ngoài ra, các khối lệnh khác như "Đặt màu" cho phép bạn thay đổi màu sắc của sprite, trong khi "Làm mờ" giúp làm mờ sprite để tạo hiệu ứng đặc biệt.
+      Nhóm lệnh hiển thị trong Scratch cung cấp cho bạn sự linh hoạt để tùy chỉnh và tạo ra các hiệu ứng độc đáo cho sprite trong dự án của mình.
+    </p>
+  </div>
+  <div id="SK" style="display:none;">
+    <h6 class="title"> NHÓM LỆNH SỰ KIỆN </h6>
+    <center>
+      <img src="https://blogdaytinhoc.com/public/files/images/2023/04/25/256/cac-lenh-su-kien.jpg" style="width:400px;height:400px">
+      <div><div><p style="font-weight:bold;font-size:20px;word-spacing:1.5px;">Hình ảnh các thẻ lệnh trong nhóm lệnh Sự kiện</p></div></div>
+    </center>
+    <p class="Para"> 
+      Nhóm lệnh sự kiện trong Scratch là tập hợp các khối lệnh được sử dụng để phản ứng và xử lý các sự kiện trong dự án. 
+      Các khối lệnh này cho phép bạn lắng nghe và đáp ứng khi người dùng tương tác với dự án, như nhấp chuột, nhấn phím hoặc thời gian trôi qua. <br>
+      Với nhóm lệnh sự kiện, bạn có thể sử dụng khối lệnh "Khi nhấp chuột vào nhân vật này" để thực hiện một hành động khi người dùng nhấp chuột vào nhân vật. 
+      Bạn cũng có thể sử dụng khối lệnh "Khi phím được nhấn" để xử lý khi người dùng nhấn một phím trên bàn phím. <br>
+      Ngoài ra, các khối lệnh khác như "Khi bắt đầu bấm vào" và "Khi thời gian trôi qua" cho phép bạn thực hiện các hành động khi dự án được khởi động hoặc khi thời gian đã trôi qua một khoảng thời gian nhất định.
+      Nhóm lệnh sự kiện trong Scratch giúp bạn tạo ra các phản ứng và xử lý sự kiện linh hoạt để tạo ra các trò chơi và hoạt động tương tác độc đáo.
+    </p>
+  </div>
+  <div id="DK" style="display:none;">
+    <h6 class="title"> NHÓM LỆNH ĐIỀU KHIỂN </h6>
+    <center>
+      <img src="https://www.thietbidiendientu.vn/wp-content/uploads/2020/10/viet.jpg" style="width:400px;height:400px">
+      <div><p style="font-weight:bold;font-size:20px;word-spacing:1.5px;">Hình ảnh các thẻ lệnh trong nhóm lệnh Điều Khiển</p></div>
+    </center>
+    <p class="Para">
+      Nhóm lệnh điều khiển trong Scratch là tập hợp các khối lệnh được sử dụng để kiểm soát luồng thực hiện các hành động trong dự án. 
+      Các khối lệnh này cho phép bạn điều khiển việc lặp lại, điều kiện và thực hiện các khối lệnh khác. <br>
+      Với nhóm lệnh điều khiển, bạn có thể sử dụng khối lệnh "Lặp lại" để thực hiện một tập hợp các lệnh nhiều lần. 
+      Bạn cũng có thể sử dụng khối lệnh "Nếu...thì" để thực hiện một khối lệnh chỉ khi một điều kiện nhất định được đáp ứng. 
+      Ngoài ra, các khối lệnh khác như "Nếu không" và "Ngừng" cho phép bạn kiểm soát luồng thực hiện bằng cách bỏ qua hoặc dừng một phần của mã. <br>
+      Nhóm lệnh điều khiển trong Scratch giúp bạn kiểm soát và tổ chức các hành động của dự án một cách linh hoạt và có cấu trúc. 
+      Bằng cách sử dụng các khối lệnh này, bạn có thể tạo ra các logic phức tạp và điều khiển các sự kiện trong dự án của mình.
+    </p>
+  </div>
+  <section id="contact" style="display:none;">
+    <h6 class="head">TÁC GIẢ</h6>
+    <div class="flex-container">
+      <div>
+        <ul class="information">
+            <li><i class="fa fa-location-arrow small-icon"></i></a>Tòa S10.07, Vinhomes Grand Park, Đường Nguyễn Xiển, Phường Long Bình, Thành Phố Thủ Đức, TP. Hồ Chí Minh</li>
+            <li><i class="fa fa-envelope small-icon"></i>hamyduyen196585@gmail.com</li>
+            <li><i class="fa fa-phone small-icon"></i>0363125004</li>
+        </ul>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/hmyuan3012" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <!-- <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li> -->
+        </ul>
+      </div>
+      <div class="avatar">
+        <img src="att.M79m1ESdO0GGdFOawAJHA290ZXTX1-s3BHN3Ya9OsOI.jpg" style="width:300px;height:300px;">
+        <p class="name">Hà Mỹ Duyên</p>
+      </div>
+    </div>
+  </section>
+  <script src="./myduyen.js"></script>
+</body>
+</html>
